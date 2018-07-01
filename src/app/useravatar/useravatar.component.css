@@ -1,0 +1,27 @@
+.gb-useravatar {
+  letter-spacing: 2px;
+  margin: 10px;
+}
+.gb-useravatar > span {
+  margin-left: 10px;
+}
+
+.gb-useravatar-username, .gb-useravatar-username:visited {
+  color: white;
+}
+.gb-useravatar-username:hover,
+.gb-useravatar-username:focus,
+.gb-useravatar-username:active {
+  color: #a09fff;
+  box-shadow: 0 0 transparent;
+}
+.gb-useravatar .dropdown .menu {
+  margin-top: 10px;
+  background-color: #273356;
+}
+.gb-useravatar .dropdown .menu .menu-item > a:focus,
+.gb-useravatar .dropdown .menu .menu-item > a:hover,
+.gb-useravatar .dropdown .menu .menu-item > a:active {
+  background: #151b29;
+  color: #a09fff;
+}

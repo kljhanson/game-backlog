@@ -1,5 +1,6 @@
-body {
+.gb-root {
   margin: 0;
+  background-color: #151b29;
 }
 .content {
   margin: 20px;

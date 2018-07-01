@@ -3391,4 +3391,12 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
+body {
+  color: #fff;
+  background-color: #151b29;
+  background: radial-gradient(ellipse farthest-corner at 50% 95%, #162652 0%, #0e1423 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /*# sourceMappingURL=game-backlog.css.map */

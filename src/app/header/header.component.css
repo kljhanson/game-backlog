@@ -1,14 +1,20 @@
 .gb-header {
-  background: #1d273c;
   padding: 10px;
-  box-shadow: 0px 2px 7px #333;
   font-family: 'Quicksand', sans-serif;
+
+  /*box-shadow: 0px 2px 7px #333;*/
+  /*background: #1d273c;*/
+
+
+  /*background: #1d273c;*/
+  /*box-shadow: 0px 1px 15px #131313;*/
+
 }
 .gb-brand, .gb-brand:visited {
-  margin-left: 20px;
+  margin: 20px;
   color: white !important;
   letter-spacing: 3px;
-  font-size: 14pt;
+  font-size: 20pt;
   transition: 0.3s;
 }
 .gb-brand:hover, .gb-brand:active {
@@ -16,7 +22,7 @@
   color: #e4e4e4 !important;
 }
 .gb-brand > i, .gb-brand:visited > i {
-  font-size: 20pt;
+  font-size: 28pt;
   transition: 0.3s;
   color: #5755d9;
 }
