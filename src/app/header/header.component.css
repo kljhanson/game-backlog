@@ -8,7 +8,10 @@
 
   /*background: #1d273c;*/
   /*box-shadow: 0px 1px 15px #131313;*/
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
 }
 .gb-brand, .gb-brand:visited {
   margin: 20px;

@@ -6,12 +6,13 @@
 // Import full Spectre source code
 @import "../node_modules/spectre.css/src/spectre";
 
-body {
+body  {
   color: #fff;
   background-color: #151b29;
   //background: radial-gradient(ellipse farthest-corner at 50% 95%, #1e2d50 0%, #151b29 70%);
   //background: radial-gradient(ellipse farthest-corner at 50% 95%, #213a82 0%, #151b29 70%);
   background: radial-gradient(ellipse farthest-corner at 50% 95%, #162652 0%, #0e1423 70%);
+  background-image: radial-gradient(ellipse farthest-corner at 50% 95%, #162652 0%, #0e1423 70%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

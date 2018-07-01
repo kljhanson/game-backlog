@@ -1,4 +1,4 @@
-<div class="gb-gamecard">
-  <div class="gb-gamecard-icon"><img [src]="gameIcon"/></div>
+<div class="gb-gamecard" (click)="gameWasClicked()">
+  <div class="gb-gamecard-icon"><img src="assets/icons/{{appId}}.png"/></div>
   <div class="gb-gamecard-title">{{gameTitle}}</div>
 </div>

@@ -18,6 +18,7 @@
 .gb-useravatar .dropdown .menu {
   margin-top: 10px;
   background-color: #273356;
+  letter-spacing: normal;
 }
 .gb-useravatar .dropdown .menu .menu-item > a:focus,
 .gb-useravatar .dropdown .menu .menu-item > a:hover,

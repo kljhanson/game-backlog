@@ -1,0 +1,25 @@
+.gb-filterbar {
+  /*position: fixed;*/
+  padding: 20px 50px;
+  /*top: 102px;*/
+  width: 100%;
+}
+.gb-filterbar-toolbar {
+  padding: 10px 20px 10px 20px;
+  height: 56px;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #273356;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.gb-filterbar-fixed {
+  position: fixed;
+  padding: 24px 50px;
+  /*top: 102px;*/
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}

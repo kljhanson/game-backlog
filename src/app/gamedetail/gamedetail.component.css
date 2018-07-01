@@ -1,0 +1,11 @@
+.gb-gamedetail .modal:target .modal-overlay, .modal.active .modal-overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.gb-gamedetail .modal-container {
+  background: #273356;
+  color: #e4e4e4
+}
+.gb-gamedetail .modal-container .modal-header {
+  color: #fff;
+}

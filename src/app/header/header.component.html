@@ -1,16 +1,17 @@
 <header class="gb-header navbar">
   <section class="navbar-section">
-    <a href="..." class="gb-brand">
+    <a href="..." class="gb-brand" [ngStyle]="{'opacity': opacity}">
       <i class="fa fa-fw fa-gamepad"></i> Game Backlog
     </a>
     <!--<a href="..." class="btn btn-link">Docs</a>-->
     <!--<a href="..." class="btn btn-link">GitHub</a>-->
   </section>
   <section class="navbar-section">
-    <div class="input-group input-inline">
+    <div class="input-group input-inline" [ngStyle]="{'transform': 'scale('+scale+')', 'margin-right': margin+'px'}">
       <!--<input class="form-input" type="text" placeholder="search">-->
       <!--<button class="btn btn-primary input-group-btn">Search</button>-->
       <gb-useravatar username="Kyuler" initials="KY" badgeNum="8" avatarIcon="assets/icons/avatar.png"></gb-useravatar>
     </div>
   </section>
 </header>
+<!--<gb-filterbar></gb-filterbar>-->

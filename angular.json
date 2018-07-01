@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/game-backlog.css",
+              "src/game-backlog.scss",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []

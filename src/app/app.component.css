@@ -3,7 +3,8 @@
   background-color: #151b29;
 }
 .content {
-  margin: 20px;
+  /*margin: 20px;*/
+  margin-top: 102px;
   /*font-family: 'Raleway', sans-serif;*/
   /*font-family: 'Montserrat', sans-serif;*/
   /*font-family: 'Nanum Gothic', sans-serif;*/
@@ -19,14 +20,19 @@
   /*font-family: 'PT Sans', sans-serif;*/
   /*font-family: 'Titillium Web', sans-serif;*/
 }
+.fixed-toolbar-padding {
+  height: 96px;
+}
 .content > div {
-  margin: 10px;
+  /*margin: 10px;*/
 }
 .title {
   font-size: 24pt;
+  margin: 30px;
 }
 .paragraph {
   line-height: 1.75;
+  margin: 30px;
 }
 .extra {
 

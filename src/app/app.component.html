@@ -1,29 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <gb-header></gb-header>
 <div class="content">
+  <gb-filterbar [fixed]="fixToolbar"></gb-filterbar>
+  <div *ngIf="fixToolbar" class="fixed-toolbar-padding"></div>
   <div class="title">All your games in one place.</div>
   <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
   <div class="extra"></div>
   <div class="gb-gamegrid">
     <div class="container">
       <div class="columns">
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/1.png" gameTitle="Example Game 1"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/2.png" gameTitle="Example Game 2"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/3.png" gameTitle="Example Game 3"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/4.png" gameTitle="Example Game 4"></gb-gamecard></div>
-      </div>
-      <div class="columns">
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/1.png" gameTitle="Example Game 1"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/2.png" gameTitle="Example Game 2"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/3.png" gameTitle="Example Game 3"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/4.png" gameTitle="Example Game 4"></gb-gamecard></div>
-      </div>
-      <div class="columns">
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/1.png" gameTitle="Example Game 1"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/2.png" gameTitle="Example Game 2"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/3.png" gameTitle="Example Game 3"></gb-gamecard></div>
-        <div class="column col-3"><gb-gamecard gameIcon="assets/game-icons/4.png" gameTitle="Example Game 4"></gb-gamecard></div>
+        <div *ngFor="let game of gameData.games;" class="column col-3">
+          <gb-gamecard [appId]="game.appId" [gameTitle]="game.name" (onClick)="openModel($event)"></gb-gamecard>
+        </div>
       </div>
     </div>
   </div>
+  <gb-gamedetail [game]="activeGame"></gb-gamedetail>
 </div>
