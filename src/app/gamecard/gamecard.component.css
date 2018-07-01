@@ -1,0 +1,21 @@
+.gb-gamecard {
+  margin: 10px;
+}
+.gb-gamecard-icon {
+}
+.gb-gamecard-icon img {
+  max-width: 100%;
+  height: auto;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.gb-gamecard-icon img:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.gb-gamecard-title {
+  font-size: 11pt;
+  color: #ccc;
+}

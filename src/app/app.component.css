@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.content {
+  margin: 20px;
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: 'Nanum Gothic', sans-serif;*/
+
+  /*font-family: 'Open Sans', sans-serif;*/
+
+  font-family: 'Quicksand', sans-serif;
+
+
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-family: 'Fira Sans', sans-serif;*/
+  /*font-family: 'PT Sans', sans-serif;*/
+  /*font-family: 'Titillium Web', sans-serif;*/
+}
+.content > div {
+  margin: 10px;
+}
+.title {
+  font-size: 24pt;
+}
+.paragraph {
+  line-height: 1.75;
+}
+.extra {
+
+}
+.gb-gamegrid {
+  margin: 50px 70px !important;
+}

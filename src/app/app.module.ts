@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { MatToolbarModule } from '@angular/material';
+import { GamecardComponent } from './gamecard/gamecard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    GamecardComponent
   ],
   imports: [
-    BrowserModule,
-    MatToolbarModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
