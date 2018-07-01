@@ -24,11 +24,11 @@ export class HeaderComponent implements OnInit {
     console.log(number);
     var newOpacity = 0;
     var newScale = 0.75;
-    var newMargin = 20;
+    var newMargin = 11;
     if(number <= 100) {
       newOpacity = 1 - (number / 100);
       newScale = 1 - ((number / 4) / 100);
-      newMargin = 20 * (number / 100);
+      newMargin = 11 * (number / 100);
     }
     this.opacity = newOpacity;
     this.scale = newScale;

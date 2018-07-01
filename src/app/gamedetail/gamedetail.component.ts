@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'gb-gamedetail',
@@ -8,6 +8,10 @@ import {Component, Input, OnInit} from '@angular/core';
 export class GamedetailComponent implements OnInit {
 
   @Input() game: string;
+  @Input() callback: Function;
+
+  @Output()
+  dismissEvent: EventEmitter<any> = new EventEmitter();
 
   constructor() {
   }
@@ -20,7 +24,8 @@ export class GamedetailComponent implements OnInit {
   }
 
   dismiss(): void {
-    this.game =  null;
+    // this.game =  null;
+    this.dismissEvent.emit();
   }
 
 }

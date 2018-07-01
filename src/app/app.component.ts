@@ -1,4 +1,4 @@
-import {Component, HostListener, Inject, Input} from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, Inject, Input} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import {WINDOW} from './window.service';
 
@@ -10,6 +10,7 @@ import {WINDOW} from './window.service';
 export class AppComponent {
   title = 'app';
   @Input() activeGame: string;
+  blur = false;
   @Input() fixToolbar = false;
 
   gameData = {
@@ -81,18 +82,10 @@ export class AppComponent {
     ]
   };
 
-  constructor(@Inject(DOCUMENT) private document: Document,
+  constructor(
+    // private ref: ChangeDetectorRef,
+              @Inject(DOCUMENT) private document: Document,
               @Inject(WINDOW) private window: Window) {
-
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event): void {
-    const number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
-    this.fixToolbar = (number >= 98);
-  }
-
-  constructor() {
     const sourceArray = this.gameData.games;
     for (let i = 0; i < sourceArray.length - 1; i++) {
       const j = i + Math.floor(Math.random() * (sourceArray.length - i));
@@ -101,10 +94,25 @@ export class AppComponent {
       sourceArray[i] = temp;
     }
     this.gameData.games = sourceArray;
+    // this.ref.markForCheck();
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event): void {
+    const number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+    this.fixToolbar = (number >= 98);
   }
 
   openModel(game: string): void {
     console.log(game);
     this.activeGame = game;
+    this.blur = true;
+  }
+
+  dismissModal(): void {
+    this.activeGame = null;
+    this.blur = false;
+    console.log("callback" + this.activeGame);
+    // this.ref.markForCheck();
   }
 }

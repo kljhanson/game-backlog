@@ -1,10 +1,14 @@
 .gb-gamedetail .modal:target .modal-overlay, .modal.active .modal-overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .gb-gamedetail .modal-container {
   background: #273356;
-  color: #e4e4e4
+  color: #e4e4e4;
+  width: 70%;
+  height: 80%;
 }
 .gb-gamedetail .modal-container .modal-header {
   color: #fff;

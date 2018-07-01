@@ -2,6 +2,12 @@
   margin: 0;
   background-color: #151b29;
 }
+.main-container {
+
+}
+.blur-bg {
+  filter: blur(5px);
+}
 .content {
   /*margin: 20px;*/
   margin-top: 102px;
@@ -28,11 +34,11 @@
 }
 .title {
   font-size: 24pt;
-  margin: 30px;
+  margin: 30px 50px;
 }
 .paragraph {
   line-height: 1.75;
-  margin: 30px;
+  margin: 30px 50px;
 }
 .extra {
 
