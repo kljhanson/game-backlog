@@ -1,5 +1,73 @@
 <div class="gb-filterbar" [ngClass]="{'gb-filterbar-fixed': fixed==true}">
   <div class="gb-filterbar-toolbar">
-    <div>Filters</div>
+    <div class="left-side">
+      <div class="has-icon-left">
+        <input class="form-input gb-filterbar-search" type="text" id="input-example-1" placeholder="Search" (keyup)="onChange($event.target)">
+        <i class="form-icon fa fa-fw fa-search"></i>
+      </div>
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" tabindex="0">
+          Status <i class="fa fa-fw fa-caret-down"></i>
+        </a>
+        <!-- menu component -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-circle text-primary"></i> Playing
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-circle text-secondary"></i> Backlog
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-circle text-warning"></i> Tried
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-circle text-success"></i> Complete
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" tabindex="0">
+          Categories <i class="fa fa-fw fa-caret-down"></i>
+        </a>
+        <!-- menu component -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-star"></i> Favorites
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-compass"></i> Adventure Games
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-clock-o"></i> Time Wasters
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa fa-fw fa-magic"></i> RPGs
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="gb-filterbar-pillbar">
+    <div *ngIf="filters.search != null" class="chip">
+      <i class="avatar avatar-sm fa fa-fw fa-search"></i>
+      {{filters.search}}
+      <a class="btn btn-clear" aria-label="Close" role="button" (click)="clearSearch()"></a>
+    </div>
   </div>
 </div>

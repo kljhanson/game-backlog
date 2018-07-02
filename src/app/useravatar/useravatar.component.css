@@ -1,6 +1,7 @@
 .gb-useravatar {
   letter-spacing: 2px;
   margin: 10px;
+  z-index: 201;
 }
 .gb-useravatar > span {
   margin-left: 10px;
@@ -19,6 +20,7 @@
   margin-top: 10px;
   background-color: #273356;
   letter-spacing: normal;
+  font-family: 'Open Sans', sans-serif;
 }
 .gb-useravatar .dropdown .menu .menu-item > a:focus,
 .gb-useravatar .dropdown .menu .menu-item > a:hover,

@@ -1,4 +1,21 @@
 <div class="gb-gamecard" (click)="gameWasClicked()">
-  <div class="gb-gamecard-icon"><img src="assets/icons/{{appId}}.png"/></div>
-  <div class="gb-gamecard-title">{{gameTitle}}</div>
+  <div class="gb-gamecard-logo"><img src="assets/icons/{{appId}}.png"/></div>
+  <div class="gb-gamecard-bar">
+    <div class="bar bar-sm">
+      <div class="bar-item tooltip" data-tooltip="35%" style="width:35%;">
+        <div class="gb-gamecard-bar-detail">12hrs played</div>
+      </div>
+      <!--<div class="bar-item tooltip" data-tooltip="15%" style="width:15%;background:#2ed537;"></div>-->
+      <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;background:#818bd5;">
+        <div class="gb-gamecard-bar-detail">7hrs left</div>
+      </div>
+      <div class="bar-item tooltip" data-tooltip="45%" style="width:45%;background:transparent;">
+        <div class="gb-gamecard-bar-detail gb-gamecard-bar-detail-dark">16hrs to 100%</div>
+      </div>
+    </div>
+  </div>
+  <div class="gb-gamecard-details">
+    <div class="gb-gamecard-title">{{gameTitle}}</div>
+    <div class="gb-gamecard-icon">{{gameTitle}}</div>
+  </div>
 </div>

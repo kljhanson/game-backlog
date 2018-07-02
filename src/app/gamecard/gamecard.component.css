@@ -1,9 +1,28 @@
 .gb-gamecard {
   margin: 10px;
 }
-.gb-gamecard-icon {
+.gb-gamecard-bar {
 }
-.gb-gamecard-icon img {
+.gb-gamecard-bar .bar.bar-sm {
+  transition: 0.2s;
+}
+.gb-gamecard-bar .bar.bar-sm:hover {
+  height: 20px;
+  cursor: pointer;
+}
+.gb-gamecard-bar-detail {
+  opacity: 0;
+  padding: 1px;
+  font-size: 8pt;
+}
+.gb-gamecard-bar-detail-dark {
+  color: #333;
+}
+.gb-gamecard-bar .bar.bar-sm:hover .gb-gamecard-bar-detail {
+   opacity: 1;
+ }
+
+.gb-gamecard-logo img {
   max-width: 100%;
   height: auto;
   /*outline: 1px solid rgba(255, 255, 255, 0.2);*/
@@ -12,14 +31,18 @@
   box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
-.gb-gamecard-icon img:hover {
+.gb-gamecard-logo img:hover {
   /*outline: 1px solid rgba(255, 255, 255, 0.3);*/
   /*box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);*/
   outline: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
+.gb-gamecard-details {
+}
 .gb-gamecard-title {
   font-size: 11pt;
   color: #ccc;
+}
+.gb-gamecard-icon {
 }

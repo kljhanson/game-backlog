@@ -6,12 +6,12 @@
     <!--<a href="..." class="btn btn-link">Docs</a>-->
     <!--<a href="..." class="btn btn-link">GitHub</a>-->
   </section>
-  <section class="navbar-section">
-    <div class="input-group input-inline" [ngStyle]="{'transform': 'scale('+scale+')', 'margin-right': margin+'px'}">
-      <!--<input class="form-input" type="text" placeholder="search">-->
-      <!--<button class="btn btn-primary input-group-btn">Search</button>-->
-      <gb-useravatar username="Kyuler" initials="KY" badgeNum="8" avatarIcon="assets/icons/avatar.png"></gb-useravatar>
-    </div>
-  </section>
+  <!--<section class="navbar-section">-->
+  <!--</section>-->
 </header>
+<div class="gb-header-useravatar input-group input-inline" [ngStyle]="{'transform': 'scale('+scale+')', 'margin-right': margin+'px'}">
+  <!--<input class="form-input" type="text" placeholder="search">-->
+  <!--<button class="btn btn-primary input-group-btn">Search</button>-->
+  <gb-useravatar username="Kyuler" initials="KY" badgeNum="8" avatarIcon="assets/icons/avatar.png"></gb-useravatar>
+</div>
 <!--<gb-filterbar></gb-filterbar>-->

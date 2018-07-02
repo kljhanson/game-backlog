@@ -2,7 +2,7 @@
 <div class="main-container" [class.blur-bg]="blur">
   <gb-header></gb-header>
   <div class="content">
-    <gb-filterbar [fixed]="fixToolbar"></gb-filterbar>
+    <gb-filterbar [fixed]="fixToolbar" (onFilter)="filterGames($event)"></gb-filterbar>
     <div *ngIf="fixToolbar" class="fixed-toolbar-padding"></div>
     <div class="title">All your games in one place.</div>
     <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
@@ -10,7 +10,7 @@
     <div class="gb-gamegrid">
       <div class="container">
         <div class="columns">
-          <div *ngFor="let game of gameData.games;" class="column col-3">
+          <div *ngFor="let game of showGames;" class="column col-3">
             <gb-gamecard [appId]="game.appId" [gameTitle]="game.name" (onClick)="openModel($event)"></gb-gamecard>
           </div>
         </div>
@@ -19,3 +19,18 @@
   </div>
 </div>
 <gb-gamedetail [game]="activeGame" (dismissEvent)="dismissModal()"></gb-gamedetail>
+<div class="footer">
+  <div class="divider"></div>
+  <div class="footer-item float-left">
+    <div>
+      <span><i class="fa fa-fw fa-twitter"></i> Twitter</span>
+      <span><i class="fa fa-fw fa-reddit"></i> Reddit</span>
+      <span><i class="fa fa-fw fa-steam"></i> Steam Group</span>
+    </div>
+    <div class="footer-item-xs">Version 0.0.1 - Changelog</div>
+  </div>
+  <div class="footer-item float-right">
+    <div class="footer-item-s">Made with <i class="fa fa-fw fa-heart text-error"></i> by Kyle Hanson <i class="fa fa-fw fa-copyright"></i> 2018</div>
+    <div class="footer-item-xs">This site is not affiliated with Valve, Steam, or any of their partners.</div>
+  </div>
+</div>

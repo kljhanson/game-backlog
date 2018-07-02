@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 200;
+  z-index: 100;
 }
 .gb-brand, .gb-brand:visited {
   margin: 20px;
@@ -32,4 +32,12 @@
 
 .gb-brand:hover > i, .gb-brand:active > i {
   color: #4240d4;
+}
+.gb-header-useravatar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 18px 10px;
+  z-index: 300;
+  font-family: 'Quicksand', sans-serif;
 }

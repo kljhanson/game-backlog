@@ -82,6 +82,8 @@ export class AppComponent {
     ]
   };
 
+  showGames = [];
+
   constructor(
     // private ref: ChangeDetectorRef,
               @Inject(DOCUMENT) private document: Document,
@@ -94,6 +96,7 @@ export class AppComponent {
       sourceArray[i] = temp;
     }
     this.gameData.games = sourceArray;
+    this.showGames = sourceArray;
     // this.ref.markForCheck();
   }
 
@@ -114,5 +117,15 @@ export class AppComponent {
     this.blur = false;
     console.log("callback" + this.activeGame);
     // this.ref.markForCheck();
+  }
+
+  filterGames(filters): void {
+    if(filters.search == null) {
+      this.showGames = this.gameData.games;
+    }
+    else {
+      this.showGames = this.gameData.games.filter(
+        game => game.name.toLowerCase().includes(filters.search.toLowerCase()));
+    }
   }
 }
